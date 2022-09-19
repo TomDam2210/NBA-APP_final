@@ -208,5 +208,5 @@ export const teamInfo = (team) => {
             colorTwo: "#FFF",
           },
         };
-    }
+  }
 };
