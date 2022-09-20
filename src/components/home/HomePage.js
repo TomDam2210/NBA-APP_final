@@ -4,6 +4,8 @@ import PlayerSelector from "../player/PlayerSelector";
 import PlayerList from "../player/PlayerList";
 import PlayerTable from "../player/PlayerTable";
 import pozadina from "../../slike/nba.svg";
+import BarChart from "../charts/BarChart";
+import LineChart from "../charts/LineChart";
 import TomoInfo from "../info/TomoInfo";
 
 export default function HomePage() {
@@ -26,6 +28,8 @@ export default function HomePage() {
         <PlayerSelector />
         <PlayerList />
         <PlayerTable />
+        <BarChart />
+        <LineChart />
       </div>
     </section>
   );
