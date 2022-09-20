@@ -27,7 +27,7 @@ export default function PlayerTable() {
       {playerList.length > 0 && (
         <div className="overflow-auto text-xs md:text-base text-center">
           <div className="py-2">
-            <div className="text-3xl uppercase text-cream text-center">
+            <div className="text-3xl uppercase text-gray-100 text-center">
               Prosjeci sezone
             </div>
           </div>
@@ -46,8 +46,8 @@ export default function PlayerTable() {
                 <th
                   className={
                     activeStat === "games_played"
-                      ? "uppercase bg-deepcyan text-cream border border-gray-300  lg:table-cell w-10 cursor-pointer"
-                      : "uppercase bg-gray-200 text-gray-600 border border-gray-300  lg:table-cell w-10 cursor-pointer hover:bg-deepcyan hover:text-cream"
+                      ? "uppercase bg-cyan-800 text-gray-100 border border-gray-300  lg:table-cell w-10 cursor-pointer"
+                      : "uppercase bg-gray-200 text-gray-600 border border-gray-300  lg:table-cell w-10 cursor-pointer hover:bg-cyan-800 hover:text-gray-100"
                   }
                   onClick={() =>
                     handleStatSort("games_played", columnDirection)
@@ -58,8 +58,8 @@ export default function PlayerTable() {
                 <th
                   className={
                     activeStat === "pts"
-                      ? "uppercase bg-deepcyan text-cream border border-gray-300  lg:table-cell w-10 cursor-pointer"
-                      : "uppercase bg-gray-200 text-gray-600 border border-gray-300  lg:table-cell w-10 cursor-pointer hover:bg-deepcyan hover:text-cream"
+                      ? "uppercase bg-cyan-800 text-gray-100 border border-gray-300  lg:table-cell w-10 cursor-pointer"
+                      : "uppercase bg-gray-200 text-gray-600 border border-gray-300  lg:table-cell w-10 cursor-pointer hover:bg-cyan-800 hover:text-gray-100"
                   }
                   onClick={() => handleStatSort("pts", columnDirection)}
                 >
@@ -68,8 +68,8 @@ export default function PlayerTable() {
                 <th
                   className={
                     activeStat === "fg_pct"
-                      ? "uppercase bg-deepcyan text-cream border border-gray-300  lg:table-cell w-10 cursor-pointer"
-                      : "uppercase bg-gray-200 text-gray-600 border border-gray-300  lg:table-cell w-10 cursor-pointer hover:bg-deepcyan hover:text-cream"
+                      ? "uppercase bg-cyan-800 text-gray-100 border border-gray-300  lg:table-cell w-10 cursor-pointer"
+                      : "uppercase bg-gray-200 text-gray-600 border border-gray-300  lg:table-cell w-10 cursor-pointer hover:bg-cyan-800 hover:text-gray-100"
                   }
                   onClick={() => handleStatSort("fg_pct", columnDirection)}
                 >
@@ -78,8 +78,8 @@ export default function PlayerTable() {
                 <th
                   className={
                     activeStat === "fga"
-                      ? "uppercase bg-deepcyan text-cream border border-gray-300  lg:table-cell w-10 cursor-pointer"
-                      : "uppercase bg-gray-200 text-gray-600 border border-gray-300  lg:table-cell w-10 cursor-pointer hover:bg-deepcyan hover:text-cream"
+                      ? "uppercase bg-cyan-800 text-gray-100 border border-gray-300  lg:table-cell w-10 cursor-pointer"
+                      : "uppercase bg-gray-200 text-gray-600 border border-gray-300  lg:table-cell w-10 cursor-pointer hover:bg-cyan-800 hover:text-gray-100"
                   }
                   onClick={() => handleStatSort("fga", columnDirection)}
                 >
@@ -88,8 +88,8 @@ export default function PlayerTable() {
                 <th
                   className={
                     activeStat === "fgm"
-                      ? "uppercase bg-deepcyan text-cream border border-gray-300  lg:table-cell w-10 cursor-pointer"
-                      : "uppercase bg-gray-200 text-gray-600 border border-gray-300  lg:table-cell w-10 cursor-pointer hover:bg-deepcyan hover:text-cream"
+                      ? "uppercase bg-cyan-800 text-gray-100 border border-gray-300  lg:table-cell w-10 cursor-pointer"
+                      : "uppercase bg-gray-200 text-gray-600 border border-gray-300  lg:table-cell w-10 cursor-pointer hover:bg-cyan-800 hover:text-gray-100"
                   }
                   onClick={() => handleStatSort("fgm", columnDirection)}
                 >
@@ -98,8 +98,8 @@ export default function PlayerTable() {
                 <th
                   className={
                     activeStat === "fg3_pct"
-                      ? "uppercase bg-deepcyan text-cream border border-gray-300  lg:table-cell w-10 cursor-pointer"
-                      : "uppercase bg-gray-200 text-gray-600 border border-gray-300  lg:table-cell w-10 cursor-pointer hover:bg-deepcyan hover:text-cream"
+                      ? "uppercase bg-cyan-800 text-gray-100 border border-gray-300  lg:table-cell w-10 cursor-pointer"
+                      : "uppercase bg-gray-200 text-gray-600 border border-gray-300  lg:table-cell w-10 cursor-pointer hover:bg-cyan-800 hover:text-gray-100"
                   }
                   onClick={() => handleStatSort("fg3_pct", columnDirection)}
                 >
@@ -108,8 +108,8 @@ export default function PlayerTable() {
                 <th
                   className={
                     activeStat === "fg3a"
-                      ? "uppercase bg-deepcyan text-cream border border-gray-300  lg:table-cell w-10 cursor-pointer"
-                      : "uppercase bg-gray-200 text-gray-600 border border-gray-300  lg:table-cell w-10 cursor-pointer hover:bg-deepcyan hover:text-cream"
+                      ? "uppercase bg-cyan-800 text-gray-100 border border-gray-300  lg:table-cell w-10 cursor-pointer"
+                      : "uppercase bg-gray-200 text-gray-600 border border-gray-300  lg:table-cell w-10 cursor-pointer hover:bg-cyan-800 hover:text-gray-100"
                   }
                   onClick={() => handleStatSort("fg3a", columnDirection)}
                 >
@@ -118,8 +118,8 @@ export default function PlayerTable() {
                 <th
                   className={
                     activeStat === "fg3m"
-                      ? "uppercase bg-deepcyan text-cream border border-gray-300  lg:table-cell w-10 cursor-pointer"
-                      : "uppercase bg-gray-200 text-gray-600 border border-gray-300  lg:table-cell w-10 cursor-pointer hover:bg-deepcyan hover:text-cream"
+                      ? "uppercase bg-cyan-800 text-gray-100 border border-gray-300  lg:table-cell w-10 cursor-pointer"
+                      : "uppercase bg-gray-200 text-gray-600 border border-gray-300  lg:table-cell w-10 cursor-pointer hover:bg-cyan-800 hover:text-gray-100"
                   }
                   onClick={() => handleStatSort("fg3m", columnDirection)}
                 >
@@ -128,8 +128,8 @@ export default function PlayerTable() {
                 <th
                   className={
                     activeStat === "ft_pct"
-                      ? "uppercase bg-deepcyan text-cream border border-gray-300  lg:table-cell w-10 cursor-pointer"
-                      : "uppercase bg-gray-200 text-gray-600 border border-gray-300  lg:table-cell w-10 cursor-pointer hover:bg-deepcyan hover:text-cream"
+                      ? "uppercase bg-cyan-800 text-gray-100 border border-gray-300  lg:table-cell w-10 cursor-pointer"
+                      : "uppercase bg-gray-200 text-gray-600 border border-gray-300  lg:table-cell w-10 cursor-pointer hover:bg-cyan-800 hover:text-gray-100"
                   }
                   onClick={() => handleStatSort("ft_pct", columnDirection)}
                 >
@@ -138,8 +138,8 @@ export default function PlayerTable() {
                 <th
                   className={
                     activeStat === "fta"
-                      ? "uppercase bg-deepcyan text-cream border border-gray-300  lg:table-cell w-10 cursor-pointer"
-                      : "uppercase bg-gray-200 text-gray-600 border border-gray-300  lg:table-cell w-10 cursor-pointer hover:bg-deepcyan hover:text-cream"
+                      ? "uppercase bg-cyan-800 text-gray-100 border border-gray-300  lg:table-cell w-10 cursor-pointer"
+                      : "uppercase bg-gray-200 text-gray-600 border border-gray-300  lg:table-cell w-10 cursor-pointer hover:bg-cyan-800 hover:text-gray-100"
                   }
                   onClick={() => handleStatSort("fta", columnDirection)}
                 >
@@ -149,8 +149,8 @@ export default function PlayerTable() {
                 <th
                   className={
                     activeStat === "ftm"
-                      ? "uppercase bg-deepcyan text-cream border border-gray-300  lg:table-cell w-10 cursor-pointer"
-                      : "uppercase bg-gray-200 text-gray-600 border border-gray-300  lg:table-cell w-10 cursor-pointer hover:bg-deepcyan hover:text-cream"
+                      ? "uppercase bg-cyan-800 text-gray-100 border border-gray-300  lg:table-cell w-10 cursor-pointer"
+                      : "uppercase bg-gray-200 text-gray-600 border border-gray-300  lg:table-cell w-10 cursor-pointer hover:bg-cyan-800 hover:text-gray-100"
                   }
                   onClick={() => handleStatSort("ftm", columnDirection)}
                 >
@@ -159,8 +159,8 @@ export default function PlayerTable() {
                 <th
                   className={
                     activeStat === "ast"
-                      ? "uppercase bg-deepcyan text-cream border border-gray-300  lg:table-cell w-10 cursor-pointer"
-                      : "uppercase bg-gray-200 text-gray-600 border border-gray-300  lg:table-cell w-10 cursor-pointer hover:bg-deepcyan hover:text-cream"
+                      ? "uppercase bg-cyan-800 text-gray-100 border border-gray-300  lg:table-cell w-10 cursor-pointer"
+                      : "uppercase bg-gray-200 text-gray-600 border border-gray-300  lg:table-cell w-10 cursor-pointer hover:bg-cyan-800 hover:text-gray-100"
                   }
                   onClick={() => handleStatSort("ast", columnDirection)}
                 >
@@ -169,8 +169,8 @@ export default function PlayerTable() {
                 <th
                   className={
                     activeStat === "blk"
-                      ? "uppercase bg-deepcyan text-cream border border-gray-300  lg:table-cell w-10 cursor-pointer"
-                      : "uppercase bg-gray-200 text-gray-600 border border-gray-300  lg:table-cell w-10 cursor-pointer hover:bg-deepcyan hover:text-cream"
+                      ? "uppercase bg-cyan-800 text-gray-100 border border-gray-300  lg:table-cell w-10 cursor-pointer"
+                      : "uppercase bg-gray-200 text-gray-600 border border-gray-300  lg:table-cell w-10 cursor-pointer hover:bg-cyan-800 hover:text-gray-100"
                   }
                   onClick={() => handleStatSort("blk", columnDirection)}
                 >
@@ -179,8 +179,8 @@ export default function PlayerTable() {
                 <th
                   className={
                     activeStat === "stl"
-                      ? "uppercase bg-deepcyan text-cream border border-gray-300  lg:table-cell w-10 cursor-pointer"
-                      : "uppercase bg-gray-200 text-gray-600 border border-gray-300  lg:table-cell w-10 cursor-pointer hover:bg-deepcyan hover:text-cream"
+                      ? "uppercase bg-cyan-800 text-gray-100 border border-gray-300  lg:table-cell w-10 cursor-pointer"
+                      : "uppercase bg-gray-200 text-gray-600 border border-gray-300  lg:table-cell w-10 cursor-pointer hover:bg-cyan-800 hover:text-gray-100"
                   }
                   onClick={() => handleStatSort("stl", columnDirection)}
                 >
@@ -189,8 +189,8 @@ export default function PlayerTable() {
                 <th
                   className={
                     activeStat === "pf"
-                      ? "uppercase bg-deepcyan text-cream border border-gray-300  lg:table-cell w-10 cursor-pointer"
-                      : "uppercase bg-gray-200 text-gray-600 border border-gray-300  lg:table-cell w-10 cursor-pointer hover:bg-deepcyan hover:text-cream"
+                      ? "uppercase bg-cyan-800 text-gray-100 border border-gray-300  lg:table-cell w-10 cursor-pointer"
+                      : "uppercase bg-gray-200 text-gray-600 border border-gray-300  lg:table-cell w-10 cursor-pointer hover:bg-cyan-800 hover:text-gray-100"
                   }
                   onClick={() => handleStatSort("pf", columnDirection)}
                 >
@@ -199,8 +199,8 @@ export default function PlayerTable() {
                 <th
                   className={
                     activeStat === "turnover"
-                      ? "uppercase bg-deepcyan text-cream border border-gray-300  lg:table-cell w-10 cursor-pointer"
-                      : "uppercase bg-gray-200 text-gray-600 border border-gray-300  lg:table-cell w-10 cursor-pointer hover:bg-deepcyan hover:text-cream"
+                      ? "uppercase bg-cyan-800 text-gray-100 border border-gray-300  lg:table-cell w-10 cursor-pointer"
+                      : "uppercase bg-gray-200 text-gray-600 border border-gray-300  lg:table-cell w-10 cursor-pointer hover:bg-cyan-800 hover:text-gray-100"
                   }
                   onClick={() => handleStatSort("turnover", columnDirection)}
                 >
@@ -209,8 +209,8 @@ export default function PlayerTable() {
                 <th
                   className={
                     activeStat === "reb"
-                      ? "uppercase bg-deepcyan text-cream border border-gray-300  lg:table-cell w-10 cursor-pointer"
-                      : "uppercase bg-gray-200 text-gray-600 border border-gray-300  lg:table-cell w-10 cursor-pointer hover:bg-deepcyan hover:text-cream"
+                      ? "uppercase bg-cyan-800 text-gray-100 border border-gray-300  lg:table-cell w-10 cursor-pointer"
+                      : "uppercase bg-gray-200 text-gray-600 border border-gray-300  lg:table-cell w-10 cursor-pointer hover:bg-cyan-800 hover:text-gray-100"
                   }
                   onClick={() => handleStatSort("reb", columnDirection)}
                 >
@@ -219,8 +219,8 @@ export default function PlayerTable() {
                 <th
                   className={
                     activeStat === "oreb"
-                      ? "uppercase bg-deepcyan text-cream border border-gray-300  lg:table-cell w-10 cursor-pointer"
-                      : "uppercase bg-gray-200 text-gray-600 border border-gray-300  lg:table-cell w-10 cursor-pointer hover:bg-deepcyan hover:text-cream"
+                      ? "uppercase bg-cyan-800 text-gray-100 border border-gray-300  lg:table-cell w-10 cursor-pointer"
+                      : "uppercase bg-gray-200 text-gray-600 border border-gray-300  lg:table-cell w-10 cursor-pointer hover:bg-cyan-800 hover:text-gray-100"
                   }
                   onClick={() => handleStatSort("oreb", columnDirection)}
                 >
@@ -229,8 +229,8 @@ export default function PlayerTable() {
                 <th
                   className={
                     activeStat === "dreb"
-                      ? "uppercase bg-deepcyan text-cream border border-gray-300  lg:table-cell w-10 cursor-pointer"
-                      : "uppercase bg-gray-200 text-gray-600 border border-gray-300  lg:table-cell w-10 cursor-pointer hover:bg-deepcyan hover:text-cream"
+                      ? "uppercase bg-cyan-800 text-gray-100 border border-gray-300  lg:table-cell w-10 cursor-pointer"
+                      : "uppercase bg-gray-200 text-gray-600 border border-gray-300  lg:table-cell w-10 cursor-pointer hover:bg-cyan-800 hover:text-gray-100"
                   }
                   onClick={() => handleStatSort("dreb", columnDirection)}
                 >

@@ -4,7 +4,7 @@ import { axiosInstance } from "../../axiosInstance";
 import { useSelector, useDispatch } from "react-redux";
 import { bindActionCreators } from "redux";
 import { actionCreators } from "../../state/index";
-import { teamInfo } from "../teamInfo/TeamInfo";
+import { teamInfo } from "../teamInfo/teamInfo";
 
 export default function PlayerSelector() {
   const state = useSelector((state) => state);
@@ -94,7 +94,7 @@ export default function PlayerSelector() {
         </div>
       )} */}
       {state.searchResult && state.searchResult.data && (
-        <div className="p-4 text-center text-2xl font-bold border-b-2 border-cream md:w-1/2 md:mx-auto">
+        <div className="p-4 text-center text-2xl font-bold border-b-2 border-gray-100 md:w-1/2 md:mx-auto">
           Kliknite na ime igrača kako bi vidjeli njihovu statistiku
         </div>
       )}
@@ -105,7 +105,7 @@ export default function PlayerSelector() {
             return (
               <div
                 key={player.id}
-                className="border rounded p-2 m-2 cursor-pointer hover:border-darkest text-lg "
+                className="border rounded p-2 m-2 cursor-pointer hover:border-zinc-900 text-lg "
                 style={{
                   background: `linear-gradient(135deg, ${
                     teamInfo(player.team.abbreviation).colors.colorOne
@@ -117,7 +117,7 @@ export default function PlayerSelector() {
                   getPlayerSeasonalAverages(player);
                 }}
               >
-                <div className="bg-darkest bg-opacity-50 rounded">
+                <div className="bg-zinc-900 bg-opacity-50 rounded">
                   {player.first_name} {player.last_name}
                 </div>
               </div>
@@ -131,7 +131,7 @@ export default function PlayerSelector() {
         state.searchResult.meta.total_pages !== 1 && (
           <div className="flex justify-center items-center pt-4">
             <div
-              className="border p-2 rounded cursor-pointer hover:bg-deepcyan hover:border-darkest"
+              className="border p-2 rounded cursor-pointer hover:bg-cyan-800 hover:border-zinc-900"
               onClick={() => {
                 handlePageChange(1);
               }}
@@ -143,7 +143,7 @@ export default function PlayerSelector() {
                 {state.searchResult.meta.current_page !== 1 &&
                   state.searchResult.meta.current_page !== 2 && (
                     <div
-                      className="border p-2 rounded cursor-pointer hover:bg-deepcyan hover:border-darkest"
+                      className="border p-2 rounded cursor-pointer hover:bg-cyan-800 hover:border-zinc-900"
                       onClick={() => {
                         handlePageChange(state.searchResult.meta.next_page - 2);
                       }}
@@ -159,7 +159,7 @@ export default function PlayerSelector() {
                 )}
 
                 <div
-                  className="border p-2 rounded cursor-pointer hover:bg-deepcyan hover:border-darkest"
+                  className="border p-2 rounded cursor-pointer hover:bg-cyan-800 hover:border-zinc-900"
                   onClick={() => {
                     handlePageChange(state.searchResult.meta.next_page);
                   }}
@@ -171,7 +171,7 @@ export default function PlayerSelector() {
             {!state.searchResult.meta.next_page && (
               <div className="flex">
                 <div
-                  className="border p-2 rounded cursor-pointer hover:bg-deepcyan hover:border-darkest"
+                  className="border p-2 rounded cursor-pointer hover:bg-cyan-800 hover:border-zinc-900"
                   onClick={() => {
                     handlePageChange(state.searchResult.meta.current_page - 1);
                   }}
@@ -188,7 +188,7 @@ export default function PlayerSelector() {
       {state.searchResult.data && state.searchResult.data.length > 0 && (
         <div className="flex justify-center py-4 px-12 md:px-24">
           <div
-            className="uppercase border p-4 rounded bg-darkest cursor-pointer hover:border-deepcyan hover:bg-cream hover:text-dark"
+            className="uppercase border p-4 rounded bg-zinc-900 cursor-pointer hover:border-cyan-800 hover:bg-gray-50 hover:text-zinc-900"
             onClick={() => {
               handleClear();
             }}

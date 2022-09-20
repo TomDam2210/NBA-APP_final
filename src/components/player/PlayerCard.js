@@ -86,7 +86,7 @@ export default function PlayerCard({ player }) {
           removePlayerFromList(player.uuid);
         }}
       >
-        <div className="bg-darkest bg-opacity-50 p-1 rounded">
+        <div className="bg-zinc-900 bg-opacity-50 p-1 rounded">
           {player.team}
         </div>
       </div>
@@ -99,7 +99,7 @@ export default function PlayerCard({ player }) {
           <select
             name="year"
             id="year"
-            className="bg-darkest border rounded mx-2"
+            className="bg-zinc-900 border rounded mx-2"
             onChange={(e) => {
               getPlayerSeasonalAverages(e, player);
             }}

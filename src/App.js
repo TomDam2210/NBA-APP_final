@@ -1,10 +1,17 @@
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Nav from "./components/nav/Nav";
+import HomePage from "./components/home/HomePage";
+import InfoPage from "./components/info/InfoPage";
 
 function App() {
   return (
     <div className="App">
-      <h1 className="text-xl font-bold underline text-blue-600">
-      Hello world!
-    </h1>
+      <Nav />
+      <Routes>
+        <Route exact path="/" element={<HomePage />} />
+        <Route exact path="/info" element={<InfoPage />} />
+      </Routes>
     </div>
   );
 }

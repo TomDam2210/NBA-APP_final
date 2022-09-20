@@ -4,11 +4,11 @@ import SearchBar from "./SearchBar";
 
 export default function Nav() {
   return (
-    <nav className="bg-deepcyan  text-darkest p-2 sm:p-4 md:p-12 ">
+    <nav className="bg-cyan-600 text-neutral-900 p-2 sm:p-4 md:p-12 ">
       <div className="container flex flex-col md:flex-row justify-between items-center mx-auto">
         <Link
           to="/"
-          className="text-2xl text-cream"
+          className="text-2xl text-zinc-50"
           onClick={() => {
             window.scrollTo(0, 0);
           }}
@@ -16,15 +16,15 @@ export default function Nav() {
           NBA Statistika
         </Link>
         <SearchBar />
-        <ul className="p-2 text-cream">
+        <ul className="p-2 text-gray-100">
           <li>
             <Link
-              to="/"
+              to="/info"
               onClick={() => {
                 window.scrollTo(0, 0);
               }}
             >
-              More Info
+              Više informacija
             </Link>
           </li>
         </ul>

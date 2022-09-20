@@ -59,7 +59,7 @@ export default function SearchBar() {
         }}
       />
       <button
-        className="bg-dark text-cyan p-2 sm:p-4 rounded uppercase"
+        className="bg-zinc-900 text-cyan-600 p-2 sm:p-4 rounded uppercase"
         onClick={() => {
           getResults();
         }}
@@ -68,7 +68,7 @@ export default function SearchBar() {
       </button>
       {state.search.length > 0 ? (
         <button
-          className="bg-red-600 text-dark p-2 sm:p-4 rounded uppercase"
+          className="bg-red-600 text-black p-2 sm:p-4 rounded uppercase"
           onClick={() => {
             handleClear();
           }}
